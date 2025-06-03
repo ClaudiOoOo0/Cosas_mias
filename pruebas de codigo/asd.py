@@ -16,12 +16,21 @@ class Estudiante():
         Nombre: {self.nombre} {self.apellido}
         Edad: {self.edad}
         """)
-
+    
     def notas(self):
         self.nota1 = 0
         self.nota2 = 0
         self.nota3 = 0
         self.nota4 = 0
 
+    def promedio(self):
+        return self.nota1 * 0.15, self.nota2 * 0.20, self.nota3 * 0.25, self.nota4 * 0.40
+
+    
+
 est = Estudiante("21222602-9","Gabriel","Salazar","20")
 est.describe()
+nota1 = float(input("Ingrese la nota 1: "))
+nota1 = float(input("Ingrese la nota 1: "))
+nota1 = float(input("Ingrese la nota 1: "))
+nota1 = float(input("Ingrese la nota 1: "))
