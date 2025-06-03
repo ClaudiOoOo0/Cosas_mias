@@ -18,6 +18,6 @@ class Estudiante():
         """)
 
 est = Estudiante()
-est.describe
+est.describe()
 est2 = Estudiante("21222602-9","Gabriel","Salazar","20")
-est2.describe
+est2.describe()
