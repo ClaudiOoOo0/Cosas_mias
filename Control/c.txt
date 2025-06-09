@@ -1,0 +1,16 @@
+Hacer un programa en Python con las siguientes características:
+Un vendedor desea calcular su comisión sobre la venta de un artículo. Al vendedor le corresponde el 2% de comisión por los artículos cuyo precio sea menor de $30000, el 4% de comisión por los artículos cuyo precio sea mayor o igual a $30000 y menor a $50000, un 5% de comisión por los artículos cuyo precio sea mayor o igual a %50000.
+• Debe crear una clase de nombre “Ventas”, con los atributos: nombre_vendedor, precio_articulo, monto_comision.
+• Debe crear un objeto de nombre “comision” con su correspondiente método constructor (__init__) que inicialice los valores de sus atributos: nombre_vendedor, precio_articulo, monto_comision=0. El atributo monto_comision debe ser asignado luego del calculo del mismo.
+• Debe visualizar el estado del objeto creado con el método (__str__).
+El programa debe tener:
+Un menú con las siguientes opciones:
+1.- Ingreso de datos y creación del objeto
+2.- Calcular comisión   
+3.- Mostrar datos (estado) del objeto
+4.- Salir
+Acciones para realizar por cada opción:
+• Al seleccionar la opción 1, se deben ingresar los datos: nombre_vendedor, precio_articulo. Además, se debe crear el objeto.
+• Al seleccionar la opción 2, se debe calcular la comisión y asignar el valor al atributo monto_comision.
+• Al seleccionar la opción 3, se debe mostrar el estado del objeto, es decir, el valor de cada uno de sus atributos.
+• Al seleccionar la opción 4, el programa debe finalizar su ejecución.

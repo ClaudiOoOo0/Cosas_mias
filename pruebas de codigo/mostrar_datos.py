@@ -22,7 +22,7 @@ class Farmacia:
     
     def mostrar_medicamentos(self, lista_medicamentos):
         for mos in lista_medicamentos:
-            print(f"Nombre: {mos[0]}\nComponente principal: {mos[1]}\nLaboratorio: {mos[2]}\n Marca: {mos[3]}\nTipo: {mos[4]}\nPrecio: {mos[5]}")
+            print(f"\nNombre: {mos[0]}\nComponente principal: {mos[1]}\nLaboratorio: {mos[2]}\nMarca: {mos[3]}\nTipo: {mos[4]}\nPrecio: {mos[5]}\n")
             
 
 #nose pa que sirve
@@ -41,14 +41,14 @@ class Comprador:
 #Menu
 def menu():
     while True:
-        print("BIENVENIDO A LA FARMACIA\n INGRESE LA OPCION DESEADA: ")
+        print("BIENVENIDO A LA FARMACIA\nINGRESE LA OPCION DESEADA: ")
         print("1-Ingresar datos de los medicamentos")
         print("2-Ingresar datos de las personas que compran")
         print("3-Visualizar datos de los medicamentos ")
         print("4-Visualizar datos de las personas que compran")
         print("5-Visualizar gráfico del monto a pagar por las personas que compraron medicamentos")
         print("6-Salir del programa")
-        opcion= int(input("Ingrese la opción que desee: "))
+        opcion= int(input("Ingrese su opcion: "))
         if opcion == 1:
             print("\nIngrese los datos de los medicamentos\n")
             nombre_producto = input("Nombre: ")
@@ -64,5 +64,7 @@ def menu():
             mos = Farmacia(lista_medicamentos, componente_principal, laboratorio, marca, tipo, precio)
             mos.mostrar_medicamentos(lista_medicamentos)
             #Se usa la segunda clase, haces algo similar a la opcion 1
+
+
 
 menu()
