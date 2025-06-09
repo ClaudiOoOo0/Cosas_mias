@@ -61,4 +61,4 @@ cantidad = int(input(f"Ingrese la cantidad en {"tipo de moneda"}: "))
 
 convertir = Conversor(opcion, valor_obs, compra_venta, cantidad)
 convertir.valor()
-
+ 
