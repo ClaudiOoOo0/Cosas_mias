@@ -4,9 +4,7 @@ import matplotlib.pyplot as plt
 
 #Listas globales
 lista_medicamentos= []
-lista_precios = []
-lista_comprador = []
-lista_nombres = []
+lista_comprador= []
 
 #Clase de los medicamentos
 class Farmacia:
@@ -23,7 +21,6 @@ class Farmacia:
         Se crea una lista con los datos del medicamento.
         """
         nuevo_med = (self.nombre, self.componente_principal, self.laboratorio, self.marca, self.tipo, self.precio)
-        lista_precios.append(self.precio)
         lista_medicamentos.append(nuevo_med)
     
     def mostrar_medicamentos(self, lista_medicamentos):
@@ -50,9 +47,9 @@ class Comprador:
         """
         #Las listas seran globales
         nuevo_com = (self.rut, self.primer_nombre, self.segundo_nombre, self.apellido_paterno, self.apellido_materno, self.monto_a_pagar)
-        lista_nombres.append(self.primer_nombre)
         lista_comprador.append(nuevo_com)
-    def mostrar_datos_comprador(self,lista_comprador):
+    
+    def mostrar_datos_comprador(self, lista_comprador):
         """
         Muestra la o las listas dde compradores.
         """
@@ -116,16 +113,13 @@ while True:
         data_co = Comprador(lista_comprador)
         data_co.mostrar_datos_comprador(lista_comprador)
     #GRAFICO
-    
+
     elif opcion == 5:
-        if lista_nombres and lista_precios and len(lista_nombres) == len(lista_precios):
-            plt.bar(lista_nombres, lista_precios, color="red", edgecolor="b")
-            plt.title("Monto a pagar por comprador")
-            plt.xlabel("Personas")
-            plt.ylabel("Monto a pagar")
-            plt.grid(axis="y", linestyle="--", alpha=0.7)
-            plt.xticks(rotation=45)
-            plt.tight_layout()
-            plt.show()
-        else:
-            print("Datos insuficientes o desbalanceados para generar el gráfico.\n")
+        x=[2, 5.6, 10, 1.2, 40, 5.6]
+        y=["hHector", "paula", "pepe", "maria", "cynthia", "xdddd"]
+        plt.bar(y, x, color="red", edgecolor="b")
+        plt.title("grafico de notas")
+        plt.xlabel("estudiantes")
+        plt.ylabel("notas de matematicas")
+        plt.grid(axis="y", linestyle="--", alpha=0.7)
+        plt.show()
